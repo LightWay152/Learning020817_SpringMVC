@@ -1,0 +1,28 @@
+﻿SpringMVC project
+
+1/ WebContent -> WEB-INF:
+(should be create views folder, configs at here for security)
+- lib: remmember copy all of libs to use spring framework and some others libs
+- configs: create spring-config-mvc.xml file to configs view and controller
+- views: include all view (jsp file) of project
+
+2/ WebContent -> web.xml:
+- servlet tags: init configs spring mvc to project
+- filter tags: apply UTF-8 encoding to project
+
+3/ src -> nhatnghe.bean: 
+- include getter/setter of objects
+- example here is: UserInfo.java
+
+4/ src -> nhatnghe.controller:
+- include controller to handling logic in project
+- HelloController.java: 
+  + demo display info
+  + edit url path: SpringMVC/say-hello.php to use demo
+- AccountController.java: 
+  + demo login/register function
+  + edit url path: SpringMVC/account/register.php to use register demo
+  + edit url path: SpringMVC/account/login/id.php to use login via id demo 
+  + edit url path: SpringMVC/account/login.php to use login way1, way2, way3 demo
+- CustomerController.java: demo 3 way to insert
+
